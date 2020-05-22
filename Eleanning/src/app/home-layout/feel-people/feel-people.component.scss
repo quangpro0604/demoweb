@@ -1,0 +1,75 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+
+.testimonials-section{
+    padding: 3rem 15px;
+    min-height: 400px;
+    background-image: url(../../../assets/img/h7.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: $mg-3;
+    .testimonials-title{
+        h1{
+            color: $color-red-0;
+            font-weight: $fw-bold-0;
+            font-size: $fs-4;
+            letter-spacing: 3px;
+        }
+        span{
+            font-size: $fs-0;
+            letter-spacing: 4px;
+            font-weight: 500;
+            color: $color-white-0;
+        }
+    }
+    .testimonials-slider{
+        height: 300px;
+        background-color: $color-gray-9;
+        box-shadow: 0 0 2px 1px $color-white-cream-2;
+        padding: $pd-3 +4;
+        .item__box{
+            background-color: rgba(0, 0, 0, 0.57);
+            padding: $pd-1 $pd-2;
+            color: $color-white-0;
+            margin-bottom: $mg-2 +5;
+            border-radius: 5px;
+            position: relative;
+            ::after{
+                content: '';
+                border-top: 9px solid rgba(0, 0, 0, 0.57);
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                position: absolute;
+                bottom: -9px;
+                left: 27%;
+            }
+        }
+        .item__user{
+            margin-left: 27%;
+            color: $color-white-0;
+            position: relative;
+            img{
+                width: 100px;
+                height: 70px;
+                position: absolute;
+                border-radius: 50%;
+                margin-right: 20px;
+                left: -15%;
+                
+            }
+            p{
+                padding-top: 20px;
+                padding-left: $pd-5 +20;
+                margin-bottom: 0;
+                font-size: $fs-2;
+                font-weight: $fw-bold;
+            }
+            span{
+                padding-left: $pd-5 +20;
+                color: $color-red-0;
+                font-size: $fs-1;
+            }
+        }
+    }
+}

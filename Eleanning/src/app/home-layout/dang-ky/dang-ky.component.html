@@ -1,0 +1,62 @@
+<div class="register">
+    <div class="w3ls-headding">
+        <h1>REGISTER</h1>
+    </div>
+    <div class="agile-main">
+        <div class="agile-left">
+
+        </div>
+        <div class="agile-right">
+            <form #dangKyForm="ngForm" (submit)="handleSignup(dangKyForm)" >
+                <div class="agile-right-h2">
+                    <h2> register here</h2>
+                </div>
+                <div class="w3l-name">
+                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" placeholder="Tài Khoản" required ngModel #txtTaiKhoan="ngModel" name="taiKhoan"/>
+                </div>
+                <div *ngIf="txtTaiKhoan.errors && (txtTaiKhoan.touched || txtTaiKhoan.dirty)" class="alert alert-danger">
+                    <div *ngIf="txtTaiKhoan.errors.required" class="alert alert-danger">
+                        Vui Lòng Nhập Tài Khoản
+                    </div>
+                </div>
+                <div class="w3l-email">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <input type="password" placeholder="Mật Khẩu" required ngModel #txtMatKhau="ngModel" name="matKhau" minlength="7" maxlength="15" />
+                </div>
+                <div *ngIf="txtMatKhau.errors && (txtMatKhau.touched || txtMatKhau.dirty)" class="alert alert-danger">
+                    <div class="alert alert-danger" *ngIf="txtMatKhau.errors.required">
+                        Vui Lòng Nhập Tài Khoản 
+                    </div>
+                    <div class="alert alert-danger" *ngIf="txtMatKhau.errors.minlength || txtMatKhau.errors.maxlength">
+                        Mật Khẩu Phải Từ 8 Đến 15 Ký Tự
+                    </div>
+                </div>
+                <div class="w3l-psw">
+                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <input type="text" placeholder="Họ Tên" required ngModel #txtHoTen="ngModel" name="hoTen"/>
+                </div>
+                <div class="alert alert-danger" *ngIf="txtHoTen.errors && (txtHoTen.touched || txtHoTen.dirty )">
+                    <div class="alert alert-danger" *ngIf="txtHoTen.errors.required">
+                        Vui Lòng Nhập Họ Tên
+                    </div>
+                </div>
+                <div class="w3l-cpsw">
+                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <input type="email" placeholder="Email" email ngModel #txtEmail="ngModel" required name="email" />
+                </div>
+                <div class="alert alert-danger" *ngIf="txtEmail.errors && (txtEmail.touched || txtEmail.dirty)">
+                    <div class="alert alert-danger" *ngIf="txtEmail.errors.required">
+                        Vui Lòng Nhập Email
+                    </div>
+                    <div class="alert alert-danger" *ngIf="txtEmail.errors.email">
+                        Email Không Đúng Định Dạng
+                    </div>
+                </div>
+                <div class="w3l-submit">
+                    <button mat-flat-button color="warn" style="width: 450px;">Đăng Ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

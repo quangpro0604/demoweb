@@ -1,0 +1,6 @@
+<div class="card p-3 mb-2">
+    <img [src]="courseItem.hinhAnh" class="w-100" style="height: 200px;" />
+    <p>{{courseItem.tenKhoaHoc}}</p>
+    <p>Lượt Xem: {{courseItem.luotXem}} </p>
+    <a class="btn btn-success" routerLink="/course-detail/{{courseItem.maKhoaHoc}}" >Chi Tiết Khoá Học</a>
+  </div>

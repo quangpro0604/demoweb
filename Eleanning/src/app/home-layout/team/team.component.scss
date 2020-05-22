@@ -1,0 +1,52 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.myTeam{
+    background-color: $color-white-cream-1;
+    .staffHeader{
+        p{
+            letter-spacing: 2px;
+            font-size: $fs-0;
+        }
+    }
+    .staffMember{
+        align-items: center;
+        .staffImg{
+            position: relative;
+            bottom: -30px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .staffContent{
+            padding: $fs-5 $fs-6 40px;
+            background-color: $color-white-0;
+            .name{
+                font-size: $fs-0;
+            }
+            .content{
+                font-size: $fs-1;
+                letter-spacing: 1px;
+                margin-bottom: $mg-2;
+            }
+            .feedBack{
+                p{
+                    color: $color-gray-4;
+                    letter-spacing: 1px;
+                    font-size: $fs-0;
+                }
+            }
+            .connect{
+                i{
+                    font-size: $fs-2;
+                    color: $color-gray-3;
+                    cursor: pointer;
+                    transition: all 0.6s;
+                    &:hover{
+                        color: $color-black-0;
+                    }
+                }
+            }
+        }
+    }
+}

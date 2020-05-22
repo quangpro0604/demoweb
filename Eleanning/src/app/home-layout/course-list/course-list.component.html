@@ -1,0 +1,15 @@
+<app-header></app-header>
+<app-carousel-course></app-carousel-course>
+<div class="container">
+  <h1 class="display-4 text-center">Danh Sách Khoá Học</h1>
+  <div class="row">
+    <div class="col-3" *ngFor="let item of courseList | paginate: { itemsPerPage: 4, currentPage: p }">
+      <app-course-item [courseItem]="item"></app-course-item>
+    </div>
+    
+  </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+<app-footer></app-footer>
+<app-terms></app-terms>
+<app-tearm-color></app-tearm-color>

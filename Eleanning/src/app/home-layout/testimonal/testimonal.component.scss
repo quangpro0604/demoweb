@@ -1,0 +1,36 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+
+.my__testimonal{ 
+    background-image: url(../../../assets/img/h30.png);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: $mg-3;
+    .testimonal{
+        .row{
+            width: 95%;
+            margin: 0 auto;
+            .testimonal__left{
+                 padding-left: $pd-5;
+                p{
+                    font-size: $fs-1;
+                    letter-spacing: 1px;
+                    padding-top: $pd-1;
+                }
+            }
+            .testimonal__right{
+                padding-left: $pd-4;  
+                .card{
+                    cursor: pointer;
+                    transition: all .5s;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.terms__color{
+    background: linear-gradient(to right, $color-red-0, $color-yellow-2 );
+    height: 8px;
+}

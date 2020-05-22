@@ -1,0 +1,31 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+
+.carousel-course{
+    width: 100%;
+    height: 480px;
+    background-color: #505763;
+    background: linear-gradient(#29303B,#29303B,#29303B);
+    margin-bottom: $pd-4;
+    position: relative;
+    .content-carousel{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        h2{
+            @include styleText($fs-4,$fw-bold-1,$color-white-0);
+        }
+        .title{
+            @include styleText($fs-2,$fw-bold,$color-white-0);
+        }
+        .rating{
+            .rating__start{
+                color: yellow;
+            }
+        }
+        .content{
+            @include styleText($fs-0,$fw-normal,$color-white-0);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.my__footer{
+    padding-top: $pd-5;
+    .footer__link{
+        width: 80%;
+        margin: 0 auto;
+        .footer__content{
+            a{
+                text-decoration: none;
+            }
+            p{
+                @include styleText($fs-1,$fw-bold,$color-blu-1);
+                transition: all .5s;
+                &:hover{
+                    @include styleText($fs-1,$fw-bold,$color-black-0);
+                }
+            }
+            .border{
+                @include styleText($fs-1,$fw-bold,$color-gray-4);
+                padding: $pd-1 $pd-2 +5;
+                cursor: pointer;
+            }
+        }
+    }
+}

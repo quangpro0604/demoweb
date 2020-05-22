@@ -1,0 +1,30 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.my__terms{
+    padding: $pd-2;
+    .footer__contact{
+    width: 80%;
+    margin: 0 auto;
+    a{
+        @include styleText($fs-2,$fw-bold-1,$color-red-0);
+        letter-spacing: 1px;
+        text-decoration: none;
+    }    
+    .copy__right{
+       @include styleText($fs-1,$fw-normal,$color-gray-4);
+        }
+    }
+    .my__privacy{
+        span{
+            cursor: pointer;
+            @include styleText($fs-1,$fw-normal,$color-blu-1);
+            margin-left: $mg-1;
+            transition: all 0.5s;
+            &:hover{
+                @include styleText($fs-1,$fw-normal,$color-black-0);
+            }
+        }
+    }
+    
+}

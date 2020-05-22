@@ -1,0 +1,120 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.w3l-login-6{
+    .login-hny{
+        position: relative;
+        .form-content{
+            display: flex;
+            .form-right{
+                min-height: inherit;
+                min-height: 100%;
+                width: 70%;
+                float: left;
+                text-align: center;
+                background: url(../../../assets/img/h12.png) no-repeat center;
+                background-size: cover;
+                box-sizing: border-box;
+                min-height: 100%;
+                position: relative;
+                .grid-info-form{  
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    color: $color-white-0;
+                    transform: translate(-50%, -50%);
+                    max-width: 500px;
+                    margin: 0 auto;
+                    position: absolute;  
+                    h3{
+                        font-size: $fs-8;
+                        line-height: 52px;
+                        color: $color-red-0;
+                        margin-top: $mg-1 +5;
+                    }
+                    h5{
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-size: $fs-1;
+                        line-height: 20px;
+                        color: #fff;
+                    }
+                    p{
+                        margin-top: $mg-2;
+                        font-weight: normal;
+                        font-size: $fs-0 +1;
+                        line-height: 28px;
+                        color: $color-white-0;
+                    }
+                }              
+                
+            }
+            .form-left{
+                width: 30%;
+                float: left;
+                padding: $pd-3 +6;
+                box-sizing: border-box;
+                min-height: 100vh;
+                padding-bottom: 60px; 
+                .middle{
+                    margin-top: $mg-3 +10;
+                    h4{
+                        font-size: $fs-6 +4;
+                        color: $color-red-0;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        line-height: 40px;
+                    }
+                    p{
+                        max-width: 100%;
+                        margin: auto;
+                        margin-top: 5px;
+                        color: #666;
+                        font-size: 16px;
+                    }
+                }
+                .signin-form {
+                    margin-top: 25px;
+                    width: 100%;
+                    overflow: hidden;
+                    .form-input {
+                        margin-bottom: 15px;
+                        input {
+                            background: $color-white-0;
+                            outline: none;
+                            width: 90%;
+                            font-size: $fs-0 +2;
+                            padding: 10px 15px;
+                            color: $color-black-0;
+                            border: 2px solid #BECED0;
+                            &:focus{
+                                border: 2px solid #52A494;
+                                background: $color-white-0;
+                            }
+                        }
+                          
+                    }
+                    .btnCreate{
+                        background:$color-red-0;
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 0px 30px;
+                        text-align: center;
+                        font-size: 16px;
+                        display: inline-block;
+                        width: 90%;
+                        height:50px;
+                        line-height: 45px;
+                        margin-top: 30px;
+                        border: none;
+                        cursor: pointer;
+                        transition: all .5s;
+                        &:hover{
+                            background: $color-red-2;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,16 @@
+@import '../../Helper/mixin';
+@import '../../Helper/variables';
+
+.my__features{
+    .features__content{
+        h3{
+            @include  styleText($fs-3,$fw-bold-0,$color-red-0);
+            padding: $pd-1 0;
+        }
+        p{
+            @include  styleText($fs-0,$fw-normal,$color-blu-0);
+            letter-spacing: 1px;
+        }
+       
+    }
+}

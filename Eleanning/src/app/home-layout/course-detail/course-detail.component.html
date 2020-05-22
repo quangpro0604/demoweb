@@ -1,0 +1,68 @@
+<app-header></app-header>
+<app-carousel-course></app-carousel-course>
+
+<div class="CourseDetail container mt-5">
+    <div class="row">
+      <div class="col-md-8 left-detail">
+        <h2>What you'll learn</h2>
+        <ul>
+          <li class="mt-4">
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>Upon completion of this course, students will be able to save, protect and make much more so that their net worth is significantly higher in the long run. You will be a personal finance expert by the end of this course!</span>
+          </li>
+          <li>
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>100+ Ways to Save More…Including the following ways:</span>
+          </li>
+          <li>
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>How to profit from the INCREDIBLE Power of Compound Interest</span>
+          </li>
+          <li>
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>14 Ways to Save More on Taxes</span>
+          </li>
+          <li>
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>13 Ways to Save More on Car/Transportation Expenses</span>
+          </li>
+          <li class="mb-5">
+            <span><i class="fa fa-angle-right"></i></span>
+            <span>7 Ways to Save More on Entertainment Expenses</span>
+          </li>                  
+        </ul>
+        <h2>Requirements</h2>
+        <p class="mt-4 text-title">No prior finance or accounting or Excel experience is required to take this course. Please note that Excel 2013 (or a newer version) is recommended in order to complete some of the exercises in this course. The Excel exercises in this course work on the Windows and Mac versions of Excel. Thanks</p>
+        <h2>Description</h2>
+        <p class="text-title"><strong>Welcome to The COMPLETE Personal Finance Course! I guarantee that this is THE most thorough personal finance course available ANYWHERE on the market - or your money back (30 day money back guarantee). This course and the many exercises in this course is customized for literally EVERY Country & EVERY currency in the world!</strong></p>
+        <p class="text-title">By An Award Winning Business Professor, Columbia University MBA Graduate (Majored in Finance) and former Goldman Sachs Employee who is also the author of the #1 best selling business course on Udemy called An Entire MBA in 1 Course. He is also the author of 101 Crucial Lessons They Don’t Teach You in Business School, which Forbes calls “1 of 6 books that all entrepreneurs need to read right now.”</p>
+      </div>
+      <div class="col-md-4 right-detail text-center">
+          <div class="right-col__module">
+            <div class="detail-top my-4">
+              <img [src]="selectedCourse?.hinhAnh" alt="..." style="height: 90%; width: 100%;"/>
+              <p class="mt-4 font-weight-bold h2 text-danger">{{selectedCourse?.ngayTao}}</p>
+              <p class="mt-4 h3">{{selectedCourse?.danhMucKhoaHoc.tenDanhMucKhoaHoc}}</p>
+            </div>
+            <div class="detail-bottom">
+              <span class="mr-4 price-new ">$9.99</span>   
+              <span class="price-old">$199.3</span> <br/>
+              <button mat-raised-button color="warn" class=" mb-4 mt-4 w-100">Add To Cart</button> <br/>
+              <button mat-raised-button color="accent" class="mb-4 w-100">Buy Now</button>
+              <p><strong> 30-Day Money-Back Guarantee</strong></p>
+              <p>Understand What are the Best Websites & Apps to Help You Track and Manage Your Spending</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<app-terms></app-terms>
+<app-tearm-color></app-tearm-color>
+<!-- <div *ngIf="!selectedCourse; else templateName">
+    <div class="spinner">Khoá Học Không Tồn Tại</div>
+</div>
+<ng-template #templateName>
+    <img [src]="selectedCourse?.hinhAnh" >
+    <p>{{selectedCourse?.moTa}}</p>
+</ng-template> -->
