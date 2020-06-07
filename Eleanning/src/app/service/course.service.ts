@@ -13,6 +13,10 @@ export class CourseService {
   @Output() courseDetailEmitter = new EventEmitter<ISelectedCourse>();
   constructor() { }
 
+  /// demo
+  product: ISelectedCourse;
+  @Output() productEmitter = new EventEmitter<ISelectedCourse>();
+  ///demo
 
   setCourseList(courseList: ICourse[]) {
     this.courseList = courseList;
@@ -22,5 +26,10 @@ export class CourseService {
   setSelectedCourse(course: ISelectedCourse) {
     this.courseListDetail = course;
     this.courseDetailEmitter.emit(this.courseListDetail);
+  }
+
+  addToCart(course: ISelectedCourse){
+    this.product = course;
+    this.productEmitter.emit(this.product);
   }
 }

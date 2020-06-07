@@ -24,7 +24,7 @@
                     <div class="form-input">
                         <label>Name</label> <br>
                         <input type="text" name="taiKhoan" ngModel required #txtTaiKhoan="ngModel" />
-                        <div *ngIf="txtTaiKhoan.errors && (txtTaiKhoan.touched || txtTaiKhoan.dirty)" class="alert alert-danger">
+                        <div *ngIf="txtTaiKhoan.errors && (txtTaiKhoan.touched || txtTaiKhoan.dirty)">
                             <div *ngIf="txtTaiKhoan.errors.required" class="alert alert-danger">
                                 Vui Lòng Nhập Tài Khoản
                             </div>
@@ -33,7 +33,7 @@
                     <div class="form-input">
                         <label>Password</label>
                         <input type="password" name="matKhau" required ngModel #txtMatKhau = "ngModel" />
-                        <div *ngIf="txtMatKhau.errors && (txtMatKhau.touched || txtMatKhau.dirty)" class="alert alert-danger">
+                        <div *ngIf="txtMatKhau.errors && (txtMatKhau.touched || txtMatKhau.dirty)">
                             <div *ngIf="txtMatKhau.errors.required" class="alert alert-danger">
                                 Vui Lòng Nhập Mật Khẩu
                             </div>

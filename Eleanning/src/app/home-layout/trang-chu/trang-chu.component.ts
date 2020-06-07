@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-trang-chu',
   templateUrl: './trang-chu.component.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrangChuComponent implements OnInit {
 
+  status:boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  layStatusHeader(value){
+    this.status = value;
+  }
 }

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { UserGatewaysService } from 'src/app/gateways/user-gateways.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -10,14 +11,17 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private _userGateways: UserGatewaysService, private _router: Router) { }
+  loginStatus: Observable<boolean>;
+  constructor(private _router: Router) { }
 
   
   ngOnInit(): void {
   }
+
+
   logoutUser(){
     localStorage.removeItem("credentials");
   }
-  
 
+  
 }

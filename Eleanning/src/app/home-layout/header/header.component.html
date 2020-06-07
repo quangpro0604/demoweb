@@ -12,26 +12,55 @@
         <div class="collapse navbar-collapse movie__navbar" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active px-3">
-                    <a class="nav-link" routerLink="/trang-chu" >Trang Chủ</a>
+                    <a class="nav-link" routerLink="/trang-chu">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pl-3" routerLink="/course-list" >Danh Sách Các Khoá Học</a>
+                    <a class="nav-link pl-3" routerLink="/course-list">Danh Sách Các Khoá Học</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pl-3" routerLink="/dangky" >Đăng Ký</a>
+                    <a class="nav-link pl-3" routerLink="/dangky">Đăng Ký</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link pl-3" routerLink="/dangnhap">Đăng Nhập</a>
                 </li>
-                <ng-template #logout>
-                    <li class="nav-item">
-                        <a class="nav-link pl-3" style="cursor: pointer;" (click)="logoutUser()">Đăng Xuất</a>
-                    </li>
-                </ng-template>
-                <li class="nav-item">
-                    <a class="nav-link pl-3">Liên Hệ</a>
+                <li class="nav-item button fancy-button" routerLink="/cart">
+                    <a class="nav-link"><i class="material-icons">shopping_cart</i></a>
                 </li>
+
             </ul>
         </div>
     </nav>
 </header>
+
+
+<ng-template #headerThayThe>
+    <header class="header mynavbar text-white pt-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container pt-0 ">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../../../assets/img/s2.png" alt="logo">
+                <p class="ml-3 mb-1">MINDSET</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse movie__navbar" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" routerLink="/trang-chu">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3" routerLink="/course-list">Danh Sách Các Khoá Học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3">Hi, </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3" style="cursor: pointer;" (click)="logoutUser()">Đăng Xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</ng-template>

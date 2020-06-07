@@ -24,11 +24,12 @@ import { CarouselCourseComponent } from './carousel-course/carousel-course.compo
 import {MatButtonModule} from '@angular/material/button';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
-  declarations: [HeaderComponent, TrangChuComponent, FooterComponent, CarouselComponent, AboutComponent, CourseComponent, TestimonalComponent, FeaturesComponent, TeamComponent, FeelPeopleComponent, TermsComponent, TearmColorComponent, CourseListComponent, CourseItemComponent, CourseDetailComponent, DangKyComponent, DangNhapComponent, CarouselCourseComponent],
+  declarations: [HeaderComponent, TrangChuComponent, FooterComponent, CarouselComponent, AboutComponent, CourseComponent, TestimonalComponent, FeaturesComponent, TeamComponent, FeelPeopleComponent, TermsComponent, TearmColorComponent, CourseListComponent, CourseItemComponent, CourseDetailComponent, DangKyComponent, DangNhapComponent, CarouselCourseComponent, CartComponent],
   imports: [
     CommonModule, CarouselModule, FormsModule, RouterModule, MatButtonModule, MatPaginatorModule, NgxPaginationModule
   ],
-  exports:[HeaderComponent, TrangChuComponent, CarouselComponent, AboutComponent, CourseComponent, TestimonalComponent, FooterComponent, FeaturesComponent, TeamComponent, FeelPeopleComponent, TermsComponent, TearmColorComponent, CourseListComponent, CourseItemComponent, CourseDetailComponent, DangKyComponent, DangNhapComponent, CarouselCourseComponent]
+  exports:[HeaderComponent, TrangChuComponent, CarouselComponent, AboutComponent, CourseComponent, TestimonalComponent, FooterComponent, FeaturesComponent, TeamComponent, FeelPeopleComponent, TermsComponent, TearmColorComponent, CourseListComponent, CourseItemComponent, CourseDetailComponent, DangKyComponent, DangNhapComponent, CarouselCourseComponent, CartComponent]
 })
 export class HomeLayoutModule { }
